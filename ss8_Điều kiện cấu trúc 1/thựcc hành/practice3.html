@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cấu trúc if và else</title>
+</head>
+<body>
+    <script>
+        var userName = prompt("who's there?", '')
+
+        if (userName == 'admin'){
+            alert('Welcome');
+        } else if (userName == null){
+            alert("canceled");
+        } else {
+            alert("i don't know you");
+        }
+        var pass = prompt('password', '');
+
+        if (pass == 'theMaster'){
+            alert("Welcome");
+        } else if (pass ==null) {
+            alert('canceled');
+        } else {
+            alert('Wrong password')
+        }
+    </script>
+</body>
+</html>
