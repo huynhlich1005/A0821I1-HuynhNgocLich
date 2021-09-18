@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>*</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>*</td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+    </tr>
+</table> <br> <br>
+<table>
+    <tr>
+        <td>*</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>*</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td></td>
+        <td>*</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td></td>
+        <td></td>
+        <td>*</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+    </tr>
+</table> <br> <br>
+<table>
+    <tr>
+        <td colspan="4"></td>
+        <td>*</td>
+        <td colspan="4"></td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+    </tr>
+</table> <br> <br>
+<table>
+    <tr>
+        <td colspan="4"></td>
+        <td>*</td>
+        <td colspan="4"></td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+        <td>*</td>
+        <td></td>
+        <td>*</td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>*</td>
+        <td colspan="3"></td>
+        <td>*</td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>*</td>
+        <td colspan="5"></td>
+        <td>*</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+        <td>*</td>
+    </tr>
+
+</table>
+<script>
+var h=5;
+var result="";
+for(var i=0;i<h-1;i++){
+for(var j=0;j<h;j++){
+if(j==0||j==i){
+result+="*";
+}else{
+result+=" ";
+}
+}
+result+="\n";
+}
+for(var i=0;i<=h;i++){
+result+="*";
+}
+console.log(result);
+</script>
+</body>
+</html>
