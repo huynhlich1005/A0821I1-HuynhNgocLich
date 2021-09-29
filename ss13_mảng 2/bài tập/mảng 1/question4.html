@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Câu 4</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [ 5, 6, 7, 16 ,25 ,1 ];
+    let numbers = parseInt(prompt("input numbers: " ));
+    arr.push(numbers);
+    let first = 0;
+    let last = arr.length - 1;
+
+    while (first < last) {
+        let b = arr[first];
+        arr[first] = arr[last];
+        arr[last] = b;
+        first++;
+        last--;
+    }
+
+    document.write(arr);
+</script>
 </body>
 </html>

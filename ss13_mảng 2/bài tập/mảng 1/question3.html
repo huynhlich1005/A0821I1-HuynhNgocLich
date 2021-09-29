@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [3 ,5 ,18, 16 ,25 ,89 ];
+    let maxNumbers = arr[0];
+    let i =1;
+    for (; i <arr.length ; i ++) {
+        if (maxNumbers < arr[i]){
+            maxNumbers = arr[i];
+        }
+    }
+    document.write("Số lớn nhất trong mảng: " + maxNumbers + " thứ tự là; " +i );
+</script>
 </body>
 </html>

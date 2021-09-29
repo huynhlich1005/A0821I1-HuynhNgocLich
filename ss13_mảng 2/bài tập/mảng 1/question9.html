@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 9</title>
+</head>
+<body>
+<script>
+    let size;
+    let arr1 = [];
+    do {
+        size = parseInt(prompt("Nhập kích thức vào mảng: "));
+    } while (size > 10);
+
+    for (let i = 0; i < size; i++) {
+        arr1 [i] = parseInt(prompt("Nhập giá trị tại vị trí: " + i))
+    }
+    let arr2 = [];
+    do {
+        size = parseInt(prompt("Nhập kích thức vào mảng: "));
+    } while (size > 10);
+
+    for (let i = 0; i < size; i++) {
+        arr2 [i] = parseInt(prompt("Nhập giá trị tại vị trí: " + i))
+    }
+    let arr3 = [];
+    do {
+        size = parseInt(prompt("Nhập kích thức vào mảng: "));
+    } while (size > 10);
+
+    for (let i = 0; i < size; i++) {
+        arr3 [i] = parseInt(prompt("Nhập giá trị tại vị trí: " + i))
+    }
+    var arr4 = arr3.concat(arr1,arr2);
+    console.log(arr4);
+</script>
+</body>
+</html>

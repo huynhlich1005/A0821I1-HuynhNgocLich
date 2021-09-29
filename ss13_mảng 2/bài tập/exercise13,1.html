@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Từ điển </title>
 </head>
 <body>
-$END$
+<script>
+
+    let arr1 = ["one", "two" , "three" , "four" ,"five" ,"six" ,"seven" ,"eight" ,"nice" ,"ten"];
+    let arr2 = ["1" ,"2" ,"3" ,"4" ,"5" ,"6" ,"7" ,"8" ,"9" ,"10"];
+
+    let temp = prompt("Nhâp vào từ cần dịch");
+    let check = true ;
+    let i = 0;
+    for (; i < arr1.length ; i++ ){
+        if (arr1[i] === temp) {
+            check = false;
+            break;
+        }
+    }
+    alert("Tiếng anh là: " + arr2[i]);
+
+    if (check) {
+        alert("Không có dữ liệu")
+    }
+</script>
+
 </body>
 </html>

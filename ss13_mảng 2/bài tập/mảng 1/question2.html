@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [53, 4558 , 4120 , -2165 , 2528 , 4500 , 3454, -4354354];
+    let maxNumbers = arr[0];
+    let i = 1;
+    for ( ; i <= arr.length ; i++){
+        if (maxNumbers < arr[i]){
+            maxNumbers = arr[i];
+        }
+    }document.write("Số lớn nhất là " + maxNumbers + "thứ hạng trong dãy số là :" + i )
+</script>
 </body>
 </html>

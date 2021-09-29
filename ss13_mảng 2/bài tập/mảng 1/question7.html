@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 7</title>
+</head>
+<body>
+<script>
+    let size;
+    let arr = [];
+    do {
+        size = parseInt(prompt("Nhập kích thức vào mảng: "));
+    } while (size > 10);
+
+    for (let i = 0; i < size; i++) {
+        arr [i] = parseInt(prompt("Nhập giá trị tại vị trí: " + i))
+    }
+    console.log(arr);
+
+    let v = parseInt(prompt("Nhập vào giá trị V: "));
+
+    for (let i = 0; i < size; i++) {
+        if (v === arr[i]) {
+            for (let j = i; j < size - 1; j++) {
+                arr[j] = arr[j + 1];
+            }
+        }
+    }
+    arr[arr.length - 1] = 0;
+    console.log(arr);
+</script>
+</body>
+</html>
