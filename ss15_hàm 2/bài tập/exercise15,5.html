@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng quản lý sản phẩm</title>
+    <style>
+        tr:nth-child(even){
+            background-color: azure;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<label for="input">Add new Product</label><br>
+<input type="text" placeholder="Nhập tên sản phẩm " id="input">
+<button onclick="addNewProduct()">Add</button>
+<div id="display"></div>
+</body>
+<script>
+    let productList = ["Iphone 11", "Samsung Galaxy Note 10", "Nokia 3060", "Vetu", "Oppo"];
+
+    function display() {
+        let  table = "<table style='border= 1px; cellpadding= 10px'>"
+            +
+            "<tr> <th>Product Name</th> </tr>";
+        for (let i = 0; i < productList.length; i++){
+            table += "<tr>" +
+                "<td>" + productList[i] + "</td>" +
+                "<td><button onclick='editProduct(" + i + ")'>Edit</button></td>" +
+                "<td><button onclick='deleteProduct(" + i + ")'>Delete</button> </td>" +
+                "</tr>"
+        }
+        table += "</table>"
+            document.getElementById('display').innerHTML = table;
+    }
+
+    function addNewProduct() {
+        let product = document.getElementById('input').value;
+        productList.push(product);
+        document.getElementById('input').value = "";
+        display();
+    }
+    function editProduct(index) {
+        productList[index] = prompt("Nhập tên mới: ");
+        display();
+    }
+    function deleteProduct(index) {
+        let check = confirm("Bạn có muốn xoá sản phẩm: " + productList[index] + " Không? ");
+        if (check === true){
+            productList.splice(index, 1);
+            display();
+        }
+    }
+    display();
+</script>
+</html>

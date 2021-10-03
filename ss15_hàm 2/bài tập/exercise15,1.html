@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm kiểm tra số nguyên tố </title>
+</head>
+<body>
+<script>
+    let count = 0;
+    function isPrime(number) {
+        while (count < 10000) {
+            let check = true;
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check === true) {
+                alert(number);
+                count++;
+            }
+            number++;
+        }
+    }
+    let thePrime = confirm("Các số nguyên tố: ")
+    let Prime = isPrime(thePrime);
+    alert(Prime);
+</script>
+</body>
+</html>
