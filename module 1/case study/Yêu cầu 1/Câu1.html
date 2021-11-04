@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 1</title>
+</head>
+<body>
+<script>
+  let w = parseInt(prompt("Nhập vào chiều dài của hình: "));
+  let h = parseInt(prompt("Nhập vào chiều cao của hình: "));
+  let shape = "";
+  for (let i = 1; i <= h; i++){
+      for (let j = 1; j <= w; j++){
+          if ( i === 1 ||i === h){
+              shape += "*";
+          }else if (j === 1 || j === w){
+              shape += "*";
+          }else {
+              shape += "&nbsp&nbsp";
+          }
+      }
+      shape += "<br>";
+  }
+  document.write(shape);
+</script>
+</body>
+</html>

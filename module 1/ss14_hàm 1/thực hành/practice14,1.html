@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và gọi hàm</title>
+</head>
+<body>
+<script>
+    // function processConfirm(answer) {
+    //     let result = "";
+    //     if (answer) {
+    //         result = "Excellent. we'll play a nice game of chess. ";
+    //     }else {
+    //         result = "Maybe layer then.";
+    //     }
+    //    return result;
+    // }
+    // let cofirAnswer = confirm("Shall we play a game?");
+    // let theAnswer = processConfirm(cofirAnswer);
+    // alert(theAnswer);
+
+        let sum1 = 0;
+        for(let i = 0; i <= arr.length; i++){
+            sum1 = sum1 + arr[i][i];
+        }
+        let sum2 = 0;
+        let k = 0;
+        for (let j = arr.length - 1; j >= 0; j--){
+            sum2 = sum2 + arr[k][j];
+            k++;
+        }
+        if(sum1 > sum2){
+            return(sum1-sum2);
+        }else{
+            return(sum2-sum1);
+        }
+
+    }
+
+</script>
+</body>
+</html>

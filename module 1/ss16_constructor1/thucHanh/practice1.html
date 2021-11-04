@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class DayClass {
+      constructor(day ,month , year) {
+          this.day = day;
+          this.month = month;
+          this.year = year;
+      }
+
+
+      getday() {
+          return this.day;
+      }
+
+      setday(value) {
+          this.day = value;
+      }
+
+      getmonth() {
+          return this.month;
+      }
+
+      setmonth(value) {
+          this.month = value;
+      }
+
+      getyear() {
+          return this.year;
+      }
+
+      setyear(value) {
+          this.year = value;
+      }
+  }
+  let date = new DayClass(2 ,2 ,2007);
+  let day = date.getday();
+  let month = date.getmonth();
+  let year = date.getyear();
+  alert(day + "/" + month + "/" + year)
+  date.setday(10);
+  date.setmonth(10)
+  date.setyear(2019);
+  let day1 = date.getday();
+  let month1 = date.getmonth();
+  let year1 = date.getyear();
+  document.write(day1 + "/" + month1 + "/" + year1)
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>câu 2</title>
+</head>
+<body>
+<script>
+    var arr = [7,2,5,3,5,3];
+    var arr1 = [7,2,5,4,6,3,5,3];
+    var arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr.indexOf(arr1[i]) === -1 && arr2.indexOf(arr1[i]) === -1){
+            arr2.push(arr1[i]);
+        }
+    }
+     arr2.sort(function (a,b) {return a- b});
+    alert("Mảng 1" + arr + "\n mảng 2" + arr1 +"\n Các số nguyên xuất hiện ở mảng B mà không có ở mảng A là :" + arr2)
+</script>
+</body>
+</html>

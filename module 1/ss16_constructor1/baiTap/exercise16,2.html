@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Change{
+        constructor(C ){
+        this.C = C;
+        }
+        getC() {
+            return this.C;
+        }
+    }
+    let date = new Change(parseInt(prompt("Nhập giá trị dộ cần đổi: ")));
+    let C = date.getC;
+    let doF = 32 * date
+    alert("Từ độ C sang dộ F:" + doF + " F");
+    let kelvin =  (273.15 + date) ;
+    alert("Từ độ C sang độ Kenvin" + kelvin + "K")
+
+</script>
+</body>
+</html>
